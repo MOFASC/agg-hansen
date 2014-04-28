@@ -11,7 +11,7 @@ do
     echo $yearidx
     inpath=$path
     outpath=/tmp/tmp.tif
-    python ~/code/oss/gdal_calc.py --co="COMPRESS=LZW" -A $inpath --outfile $outpath --calc="A==$yearidx" --overwrite
+    gdal_calc.py --co="COMPRESS=LZW" -A $inpath --outfile $outpath --calc="A==$yearidx" --overwrite
 
     # echo "Warping"
     inpath=$outpath
@@ -22,5 +22,5 @@ do
     inpath=$outpath
     outpath=$finaloutpath
     echo $inpath $outpath
-    python ~/code/oss/gdal_calc.py  -A $inpath --outfile $outpath --calc="A*100" --overwrite --NoDataValue=255 --co="COMPRESS=LZW" --type Byte
+    gdal_calc.py  -A $inpath --outfile $outpath --calc="A*100" --overwrite --NoDataValue=255 --co="COMPRESS=LZW" --type Byte
 done
