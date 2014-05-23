@@ -1,7 +1,7 @@
 # tweakable parameters
 
-true_res=0.00208388888885
-nominal_res=250
+true_res=0.00208333333333 # in degrees
+nominal_res=250 # used for naming
 basepath=/tmp/hansen
 
 startyear=2001

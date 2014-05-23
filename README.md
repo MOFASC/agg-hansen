@@ -7,7 +7,7 @@ Aggregate 30 meter forest loss data from Hansen et al. (2013) into other resolut
 ```shell
 sudo add-apt-repository --yes ppa:ubuntugis/ubuntugis-unstable
 sudo apt-get update
-sudo apt-get install gdal-bin=1.10.0-1~precise1 # required for average resampling
+sudo apt-get install gdal-bin=1.10.1+dfsg-5ubuntu1 # required for average resampling
 ```
 
 ### Running
